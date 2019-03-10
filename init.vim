@@ -101,7 +101,7 @@ set so=999
 
 "let g:python_host_prog = '/home/nethomes/sebastian/.local/bin/python2'
 "let g:python3_host_prog = '/home/nethomes/sebastian/.local/bin/python3'
-let g:python3_host_prog = '/Users/sebastian/ENV/bin/python3'
+" let g:python3_host_prog = '/Users/sebastian/ENV/bin/python3'
 
 "let g:jedi#force_py_version = 3
 

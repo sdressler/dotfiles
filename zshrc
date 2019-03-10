@@ -39,3 +39,5 @@ zplugin light sindresorhus/pure
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 PROMPT='%F{242}%* '$PROMPT
+
+source $HOME/.local/local-env/bin/activate
