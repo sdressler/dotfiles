@@ -21,7 +21,7 @@ alias vim='nvim'
 alias vi='nvim'
 
 ### Added by Zplugin's installer
-source '/Users/sebastian/.zplugin/bin/zplugin.zsh'
+source $HOME/.zplugin/bin/zplugin.zsh
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 ### End of Zplugin's installer chunk
