@@ -16,9 +16,11 @@ setopt HIST_VERIFY               # Don't execute immediately upon history expans
 bindkey "^[[1~" beginning-of-line
 bindkey "^[[4~" end-of-line
 bindkey "^[[3~" delete-char
+bindkey "^[[1;3C" vi-forward-blank-word
 
 alias vim='nvim'
 alias vi='nvim'
+alias ls='ls -G'
 
 ### Added by Zplugin's installer
 source $HOME/.zplugin/bin/zplugin.zsh
@@ -28,13 +30,19 @@ autoload -Uz _zplugin
 
 zplugin light supercrabtree/k
 zplugin light zsh-users/zsh-autosuggestions
-zplugin light zdharma/fast-syntax-highlighting
 
 zplugin light zdharma/zui
 zplugin light zdharma/zplugin-crasis
 
 zplugin ice pick"async.zsh" src"pure.zsh"
 zplugin light sindresorhus/pure
+
+zplugin ice blockf
+zplugin light zsh-users/zsh-completions
+
+# This must be the last plugin
+zplugin ice atinit"zpcompinit"
+zplugin light zdharma/fast-syntax-highlighting
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
